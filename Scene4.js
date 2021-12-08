@@ -918,10 +918,10 @@ class Scene4 extends Phaser.Scene {
     }
     // p1 bullet hit fuction
       let bulletHit1 = (p, b) => {
-          scoreText1.setText(`Blue score: ${blue_score += 1}`)
-          if (blue_score == 5) {
+          scoreText1.setText(`Red score: ${red_score += 1}`)
+          if (red_score == 5) {
               restartsetstart()
-              this.add.text(325, 250, 'BLUE WINS', {
+              this.add.text(325, 250, 'Red WINS', {
                   fontSize: "70px",
                   color: "cyan",
               })
@@ -941,7 +941,7 @@ class Scene4 extends Phaser.Scene {
               }
                 })
           }
-          else if (blue_score != 5) {
+          else if (red_score != 5) {
           // hitsnd.play({volume: .5})
           // bgmusic.stop()
           resetround()
