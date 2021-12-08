@@ -651,9 +651,9 @@ let p1fireupright = (bulletn, speed) => {
           scoreText1.setText(`Red score: ${red_score += 1}`)
           if (red_score == 5) {
               restartsetstart()
-              this.add.text(325, 250, 'Red WINS', {
+              this.add.text(325, 250, 'RED WINS', {
                   fontSize: "70px",
-                  color: "cyan",
+                  color: "red",
               })
               // bgmusic.stop()
               // hitsnd.play({volume: .5})
